@@ -9,6 +9,7 @@ The Windows Triage Tool is a batch script utility designed for Cybersecurity pro
 - Wireshark https://www.wireshark.org/download.html
 - Windows Sysinternals https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
     Run the following from cmd to install:
+
       winget show "Sysinternals Suite"
   
       winget install "Sysinternals Suite"
