@@ -1,4 +1,65 @@
 # Windows Triage Tool
+```
+- - - - %USERDOMAIN%\%USERNAME%     
+- - - -  WINDOWS TRIAGE TOOL  - - - -
+                  ^
+                 /|\
+                / | \
+      PROCESS  /  |  \  NETWORK
+      EVENTS  /   O   \ ACTIVITY
+             /  /   \  \
+            / /       \ \
+           /_____________\
+             PERSISTANCE
+             MECHANISMS
+_______________________________________
+       NETWORK ACTIVITY TOOLS
+=======================================
+      1 = Netstat
+      2 = Check Open Ports
+      3 = Procmon
+      4 = Process Explorer
+      5 = Wireshark
+      6 = IP Configuration
+      7 = Traceroute
+      8 = Network Share View
+      9 = Check DNS hosts File
+_______________________________________
+      PERSISTANCE MECHANISMS TOOLS
+=======================================
+      10 = Task Scheduler
+      11 = Regedit
+      12 = Autoruns
+      13 = Services
+      14 = List User Accounts
+      15 = List User Groups
+_______________________________________
+      PROCESS EVENT TOOLS
+=======================================
+      16 = Strings
+      17 = Tasklist
+      18 = PE Detective
+      19 = Process Explorer
+_______________________________________
+      SYSTEM AND SECURITY TOOLS
+=======================================
+      20 = System Information
+      21 = Event Viewer
+      22 = Disk Usage
+      23 = Windows Defender Scan
+      24 = Task Manager
+      25 = Registry Editor
+      26 = DirectX Diagnostic Tool
+      27 = Performance Monitor
+      28 = Resource Monitor
+      29 = Disk Cleanup
+      30 = Disk Management
+      31 = Windows Security Center
+      32 = Check for Windows Updates
+      33 = System Integrity Check
+---------------------------------------
+ENTER NUMBER TO LAUNCH TOOL:
+```
 
 ## Overview
 
