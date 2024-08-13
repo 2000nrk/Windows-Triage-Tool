@@ -45,12 +45,12 @@ ECHO       5 = Wireshark
 ECHO       6 = IP Configuration
 ECHO       7 = Traceroute
 ECHO       8 = Network Share View
-ECHO       9 = Check DNS hosts File
+ECHO       9 = Check DNS Hosts File
 ECHO _______________________________________
 ECHO       PERSISTANCE MECHANISMS TOOLS
 ECHO =======================================       
 ECHO       10 = Task Scheduler
-ECHO       11 = Regedit
+ECHO       11 = Registry Editor
 ECHO       12 = Autoruns
 ECHO       13 = Services
 ECHO       14 = List User Accounts
@@ -65,12 +65,12 @@ ECHO       19 = Process Explorer
 ECHO _______________________________________
 ECHO       SYSTEM AND SECURITY TOOLS
 ECHO =======================================
-ECHO       20 = System Information
-ECHO       21 = Event Viewer
-ECHO       22 = Disk Usage
-ECHO       23 = Windows Defender Scan
-ECHO       24 = Task Manager
-ECHO       25 = Registry Editor
+ECHO       20 = Open VirusTotal
+ECHO       21 = System Information
+ECHO       22 = Event Viewer
+ECHO       23 = Disk Usage
+ECHO       24 = Windows Defender Scan
+ECHO       25 = Task Manager
 ECHO       26 = DirectX Diagnostic Tool
 ECHO       27 = Performance Monitor
 ECHO       28 = Resource Monitor
@@ -91,9 +91,7 @@ setlocal
 set "choice=%1"
 :: NETWORK TOOLS
 if /i "%choice%" == "1" ( start cmd.exe /k netstat -a -b -f -o -q 10 & exit /b )
-if /i "%choice%" == "2" (
-    start cmd.exe /k "netstat -an | findstr LISTEN" & exit /b
-)
+if /i "%choice%" == "2" ( start cmd.exe /k "netstat -an | findstr LISTEN" & exit /b )
 if /i "%choice%" == "3" ( start procmon.exe & exit /b )
 if /i "%choice%" == "4" ( start procexp.exe & exit /b )
 if /i "%choice%" == "5" ( start wireshark.exe & exit /b )
@@ -114,12 +112,12 @@ if /i "%choice%" == "17" ( start cmd /k tasklist /SVC & exit /b )
 if /i "%choice%" == "18" ( start "PE Detective" "C:\Program Files\NTCore\Explorer Suite\PE Detective.exe" & exit /b )
 if /i "%choice%" == "19" ( start procexp.exe & exit /b )
 :: SYSTEM AND SECURITY TOOLS
-if /i "%choice%" == "20" ( start cmd /k systeminfo & exit /b )
-if /i "%choice%" == "21" ( start eventvwr.msc & exit /b )
-if /i "%choice%" == "22" ( start cmd /k chkdsk & exit /b )
-if /i "%choice%" == "23" ( start powershell start-mpscan -scantype fullscan & exit /b )
-if /i "%choice%" == "24" ( start taskmgr.exe & exit /b )
-if /i "%choice%" == "25" ( start regedit.exe & exit /b )
+if /i "%choice%" == "20" ( start microsoft-edge:https://www.virustotal.com & exit /b )
+if /i "%choice%" == "21" ( start cmd /k systeminfo & exit /b )
+if /i "%choice%" == "22" ( start eventvwr.msc & exit /b )
+if /i "%choice%" == "23" ( start cmd /k chkdsk & exit /b )
+if /i "%choice%" == "24" ( start powershell start-mpscan -scantype fullscan & exit /b )
+if /i "%choice%" == "25" ( start taskmgr.exe & exit /b )
 if /i "%choice%" == "26" ( start dxdiag.exe & exit /b )
 if /i "%choice%" == "27" ( start perfmon.msc & exit /b )
 if /i "%choice%" == "28" ( start resmon.exe & exit /b )
