@@ -23,12 +23,12 @@ _______________________________________
       6 = IP Configuration
       7 = Traceroute
       8 = Network Share View
-      9 = Check DNS hosts File
+      9 = Check DNS Hosts File
 _______________________________________
       PERSISTANCE MECHANISMS TOOLS
 =======================================
       10 = Task Scheduler
-      11 = Regedit
+      11 = Registry Editor
       12 = Autoruns
       13 = Services
       14 = List User Accounts
@@ -43,12 +43,12 @@ _______________________________________
 _______________________________________
       SYSTEM AND SECURITY TOOLS
 =======================================
-      20 = System Information
-      21 = Event Viewer
-      22 = Disk Usage
-      23 = Windows Defender Scan
-      24 = Task Manager
-      25 = Registry Editor
+      20 = Open VirusTotal
+      21 = System Information
+      22 = Event Viewer
+      23 = Disk Usage
+      24 = Windows Defender Scan
+      25 = Task Manager
       26 = DirectX Diagnostic Tool
       27 = Performance Monitor
       28 = Resource Monitor
